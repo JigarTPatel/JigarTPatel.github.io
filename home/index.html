@@ -20,7 +20,7 @@
 
         a {
             text-decoration: none; /* Removing the underline from links */
-            color: #000000; /* Black color for links */
+            color: #000000; /* black color for links */
         }
 
         ol {
@@ -32,25 +32,6 @@
             padding: 20px; /* Adding padding for better spacing*/
             border-radius: 10px; /* Add rounded corners to the content div */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Addition of a subtle shadow effect */
-            display: flex;
-            flex-direction: column; /* Align items in a column by default */
-            align-items: center; /* Center content horizontally */
-        }
-
-        header {
-            text-align: center;
-        }
-
-        .assignments {
-            display: flex;
-            flex-direction: column; /* Align assignments in a column by default */
-            align-items: center; /* Center assignments horizontally */
-            margin-top: 20px;
-        }
-
-        .assignment-item {
-            text-align: center;
-            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -58,22 +39,20 @@
 <body>
 
     <div id="content">
-        <header>
-            <h1>CSCE 242: Website Applications</h1>
-            <!-- header -->
-            <h2>Jigar Patel</h2>
-            <!-- name -->
-        </header>
+        <h1>CSCE 242: Website Applications</h1>
+        <!-- header -->
+        <h2>Jigar Patel</h2>
+        <!-- name -->
 
         <p>This class is primarily to learn, design and create websites.</p>
         <!-- description of class -->
 
         <h3>Assignments</h3>
         <!-- assignment numerical list -->
-        <ol class="assignments">
-            <li class="assignment-item"><a href="csce242/assignments/02/index.html">Assignment 1 Basic HTML</a></li>
-            <li class="assignment-item"><a href="csce242/assignments/03/index.html">Assignment 2 Basic CSS</a></li>
-            <li class="assignment-item"><a href="csce242/assignments/04/flexlayout.html">Assignment 3 Page Layout</a></li>
+        <ol>
+            <li><a href="csce242/assignments/02/index.html">Assignment 1 Basic HTML</a></li>
+            <li><a href="csce242/assignments/03/index.html">Assignment 2 Basic CSS</a></li>
+            <li><a href="csce242/assignments/04/flexlayout.html">Assignment 3 Page Layout</a></li>
         </ol>
     </div>
 
