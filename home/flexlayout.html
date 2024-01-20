@@ -8,17 +8,18 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            color: black;
         }
 
         header {
-            background-color: #3498db;
-            color: #fff;
+            background-color: #800000; /* Garnet */
+            color: #C0C0C0; /* Silver */
             padding: 20px;
             text-align: center;
         }
 
         nav {
-            background-color: #2ecc71;
+            background-color: #C0C0C0; /* Silver */
             padding: 10px;
             display: flex;
             flex-direction: column;
@@ -35,16 +36,16 @@
 
         nav a {
             text-decoration: none;
-            color: #fff;
+            color: black;
             font-weight: bold;
             padding: 8px 12px;
             display: block;
-            background-color: #e74c3c;
+            background-color: #000000; /* Black */
             border-radius: 5px;
         }
 
         nav a:hover {
-            background-color: #c0392b;
+            background-color: #333333; /* Darker Black */
         }
 
         .main-content {
@@ -58,10 +59,31 @@
         }
 
         footer {
-            background-color: #34495e;
-            color: #fff;
+            background-color: #C0C0C0; /* Silver */
+            color: #000000; /* Black */
             padding: 10px;
             text-align: center;
+        }
+
+        h2 {
+            color: #800000; /* Garnet */
+        }
+
+        .big-ideas {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .big-ideas div {
+            flex-basis: 30%;
+        }
+
+        .big-ideas img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -73,24 +95,48 @@
 
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+            <li><a href="#">Link 6</a></li>
+            <li><a href="#">Link 7</a></li>
         </ul>
     </nav>
 
     <section class="main-content">
         <article>
-            <h2>Main Article</h2>
+            <h2>Title 1</h2>
+            <img src="https://place-hold.it/400x200" alt="Placeholder Image 1">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         </article>
         
         <aside>
-            <h2>Additional Content</h2>
-            <img src="https://place-hold.it/200x200" alt="Placeholder Image">
+            <h2>Title 2</h2>
+            <img src="https://place-hold.it/400x200" alt="Placeholder Image 2">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         </aside>
+    </section>
+
+    <section class="big-ideas">
+        <div>
+            <h2>Big Idea 1</h2>
+            <img src="https://place-hold.it/200x150" alt="Placeholder Image 3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+
+        <div>
+            <h2>Big Idea 2</h2>
+            <img src="https://place-hold.it/200x150" alt="Placeholder Image 4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+
+        <div>
+            <h2>Big Idea 3</h2>
+            <img src="https://place-hold.it/200x150" alt="Placeholder Image 5">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
     </section>
 
     <footer>
