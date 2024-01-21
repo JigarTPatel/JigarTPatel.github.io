@@ -33,16 +33,23 @@
 
         ol {
             list-style-type: decimal;
-            padding-left: 20px; /* Adjusted padding for ordered list */
+            padding-left: 20px;
         }
 
         .assignment {
-            margin-bottom: 20px; /* Added margin between assignments */
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .assignment img {
+            width: 50px; /* Adjust image width as needed */
+            margin-right: 10px; /* Add margin between image and text */
         }
 
         @media screen and (max-width: 768px) {
             #content {
-                flex-direction: column; /* Stack columns vertically on smaller screens */
+                flex-direction: column;
             }
         }
     </style>
@@ -56,10 +63,19 @@
         <p>This class is primarily to learn, design, and create websites.</p>
         <h3>Assignments</h3>
         <ol>
-            <li class="assignment"><a href="csce242/assignments/02/index.html">Assignment 1: Basic HTML</a></li>
-            <li class="assignment"><a href="csce242/assignments/03/index.html">Assignment 2: Basic CSS</a></li>
-            <li class="assignment"><a href="csce242/assignments/04/flexlayout.html">Assignment 3: Page Layout</a></li>
-            <!-- Add upcoming assignments with descriptions and screenshots as needed -->
+            <li class="assignment">
+                <img src="assignment1.jpg" alt="Assignment 1 Image"> <!-- Add image source and alt text -->
+                <a href="csce242/assignments/02/index.html">Assignment 1: Basic HTML</a>
+            </li>
+            <li class="assignment">
+                <img src="assignment2.jpg" alt="Assignment 2 Image">
+                <a href="csce242/assignments/03/index.html">Assignment 2: Basic CSS</a>
+            </li>
+            <li class="assignment">
+                <img src="assignment3.jpg" alt="Assignment 3 Image">
+                <a href="csce242/assignments/04/flexlayout.html">Assignment 3: Page Layout</a>
+            </li>
+            <!-- Add upcoming assignments with images and descriptions as needed -->
         </ol>
     </div>
 
