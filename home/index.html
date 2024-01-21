@@ -3,35 +3,47 @@
 
 <head>
     <title>CSCE 242: Website Applications</title>
-    <!-- title -->
     <style>
-        /* CSS */
         body {
             font-family: 'Helvetica', sans-serif;
             background: url('bodybackground.jpg') center fixed;
-            background-color: #f0f8ff; /* AliceBlue background */
-            color: #100f0f; /* Dark text color */
-            margin: 20px; /* Add margin for better readability */
+            background-color: #f0f8ff;
+            color: #100f0f;
+            margin: 20px;
         }
 
         h1, h2, h3 {
-            color: #a92424; /* Dark red for headers */
+            color: #a92424;
         }
 
         a {
-            text-decoration: none; /* Removing the underline from links */
-            color: #000000; /* black color for links */
-        }
-
-        ol {
-            list-style-type: decimal; /* Use decimal numbering for ordered list */
+            text-decoration: none;
+            color: #000000;
         }
 
         #content {
-            background-color: #fffdfd; /* White background for content divider */
-            padding: 20px; /* Adding padding for better spacing*/
-            border-radius: 10px; /* Add rounded corners to the content div */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Addition of a subtle shadow effect */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fffdfd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px; /* Adjusted padding for ordered list */
+        }
+
+        .assignment {
+            margin-bottom: 20px; /* Added margin between assignments */
+        }
+
+        @media screen and (max-width: 768px) {
+            #content {
+                flex-direction: column; /* Stack columns vertically on smaller screens */
+            }
         }
     </style>
 </head>
@@ -40,19 +52,14 @@
 
     <div id="content">
         <h1>CSCE 242: Website Applications</h1>
-        <!-- header -->
         <h2>Jigar Patel</h2>
-        <!-- name -->
-
-        <p>This class is primarily to learn, design and create websites.</p>
-        <!-- description of class -->
-
+        <p>This class is primarily to learn, design, and create websites.</p>
         <h3>Assignments</h3>
-        <!-- assignment numerical list -->
         <ol>
-            <li><a href="csce242/assignments/02/index.html">Assignment 1 Basic HTML</a></li>
-            <li><a href="csce242/assignments/03/index.html">Assignment 2 Basic CSS</a></li>
-            <li><a href="csce242/assignments/04/flexlayout.html">Assignment 3 Page Layout</a></li>
+            <li class="assignment"><a href="csce242/assignments/02/index.html">Assignment 1: Basic HTML</a></li>
+            <li class="assignment"><a href="csce242/assignments/03/index.html">Assignment 2: Basic CSS</a></li>
+            <li class="assignment"><a href="csce242/assignments/04/flexlayout.html">Assignment 3: Page Layout</a></li>
+            <!-- Add upcoming assignments with descriptions and screenshots as needed -->
         </ol>
     </div>
 
