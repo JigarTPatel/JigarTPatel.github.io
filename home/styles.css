@@ -40,6 +40,16 @@ ol {
     padding: 15px; /* Padding around each assignment */
     border-radius: 8px; /* Rounded corners */
 }
+.projects {
+    margin-bottom: 20px;
+    text-align: center; /* Center text and image */
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    background-color: #f9f9f9; /* Background color behind each assignment */
+    padding: 15px; /* Padding around each assignment */
+    border-radius: 8px; /* Rounded corners */
+}
 
 .assignment img {
     width: 100px; 
