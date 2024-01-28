@@ -17,7 +17,7 @@ a {
 
 #content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     background-color: #fffdfd;
     padding: 20px;
@@ -34,7 +34,7 @@ ol {
     margin-bottom: 20px;
     text-align: center; /* Center text and image */
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     align-items: center;
     background-color: #f9f9f9; /* Background color behind each assignment */
     padding: 15px; /* Padding around each assignment */
@@ -52,6 +52,6 @@ ol {
 
 @media screen and (max-width: 768px) {
     #content {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
