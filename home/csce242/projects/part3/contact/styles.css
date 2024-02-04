@@ -44,26 +44,26 @@ body {
 
 /* Main Content */
 
-.save-favs {
-    margin-bottom: 30px;
-    border-bottom: 2px solid var(--dark-grey);
-}
-.buttons {
+.name {
     text-align: center;
-    margin-top: 40px;
 }
-.btn-section{
-    margin-bottom: 20px;
+.images{
+    border-radius: 20px;
 }
-button{
-    width: 150px;
-    height:50px;
+.brand {
+    border-radius: 20px;
+    background: var(--light-grey);
+    border: 1px solid var(--dark-grey);
 }
+.brand {
+    text-align: center;
+}
+
 
 
 /* For larger resolutions */
 @media only screen and (min-width: 768px) {
-
+    
     .columns{
         display:flex;
     }
@@ -78,10 +78,26 @@ button{
     #main-nav li:hover {
         border-bottom: 2px solid var(--dark-grey);
     }
-    .save-favs{
-        width:90%;
+    .brand-box {
+        display:flex;
+        width: 80%;
         margin: auto;
     }
+    .brand {
+        width: 100%;
+        margin: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 20px;
+    }
+    
+    
 }
 
 
+/* For smaller resolutions */
+@media only screen and (max-width: 768px) {
+    .brand {
+        margin: 20px;
+    }
+}
