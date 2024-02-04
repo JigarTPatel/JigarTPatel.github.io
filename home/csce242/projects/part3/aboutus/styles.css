@@ -1,47 +1,45 @@
 :root {
-    --black: #000000;
-    --white: #ffffff;
-    --red: #ff0000;
+    --black: #000;
+    --white: #fff;
     --light-grey: #d3d3d3;
-    --dark-grey: #000000;
-    --bg: #ffffff;
+    --dark-grey: #433f3f;
+    --bg: #abc;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     background: var(--bg);
 }
 
-/* structure */
+/* structure */ 
 #content {
-    background: var(--white);
+    background: var(--white); /* aka: white */
     padding: 5px;
-    width: 80%;
-    margin: auto;
-    border-radius: 5px;
+    width: 80%; /* width of div across page*/
+    margin: auto; /* center horizontally */
+    border-radius: 5px; /* will round corners a little bit */
 }
 
-/* header */
+/*header*/
 #header {
     text-align: center;
 }
-
 #main-nav ul {
+    /*remove list indent */
     padding-left: 0;
     margin: auto;
 }
-
 #main-nav li {
     list-style-type: none;
-    background: var(--red); /* Red background */
+    background: var(--light-grey);
     padding: 10px;
-    border-bottom: 1px solid var(--black); /* Black border */
+    border-bottom: 1px solid var(--dark-grey);
+    border: 1px solid var(--dark-grey);
     border-radius: 15px;
 }
-
 #main-nav a {
     text-decoration: none;
-    color: var(--white); /* White text */
+    color: var(--black);
 }
 
 /* Main Content */
@@ -49,46 +47,42 @@ body {
 .name {
     text-align: center;
 }
-
-.images {
+.images{
     border-radius: 20px;
 }
-
 .brand {
     border-radius: 20px;
-    background: var(--red); /* Red background */
-    border: 1px solid var(--black); /* Black border */
+    background: var(--light-grey);
+    border: 1px solid var(--dark-grey);
 }
-
 .brand {
     text-align: center;
 }
 
+
+
 /* For larger resolutions */
 @media only screen and (min-width: 768px) {
-    .columns {
-        display: flex;
+    
+    .columns{
+        display:flex;
     }
-
     #main-nav {
-        display: flex;
+        display:flex;
+        
     }
-
     #main-nav li {
         text-align: center;
-        margin: 40px;
+        margin:40px;
     }
-
     #main-nav li:hover {
-        border-bottom: 2px solid var(--black); /* Darker border on hover */
+        border-bottom: 2px solid var(--dark-grey);
     }
-
     .brand-box {
-        display: flex;
+        display:flex;
         width: 80%;
         margin: auto;
     }
-
     .brand {
         width: 100%;
         margin: 30px;
@@ -96,7 +90,10 @@ body {
         margin-right: 40px;
         padding: 20px;
     }
+    
+    
 }
+
 
 /* For smaller resolutions */
 @media only screen and (max-width: 768px) {

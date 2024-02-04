@@ -1,10 +1,9 @@
 :root {
-    --black: #000000;
-    --white: #ffffff;
-    --red: #ff0000;
-    --light-grey: #d3d3d3;
-    --dark-grey: #000000;
-    --bg: #ffffff;
+    --black: #000;
+    --white: #fff;
+    --red: #c32828;
+    --dark-grey: #433f3f;
+    --bg: rgb(118, 135, 151);
 }
 
 body {
@@ -56,7 +55,7 @@ body {
 }
 
 img {
-    border-radius: 15px;
+    border-radius: 29px;
 }
 
 .two, .three {
