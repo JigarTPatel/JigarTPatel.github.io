@@ -7,28 +7,29 @@
 }
 
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: var(--bg);
 }
 
 /* structure */ 
 #content {
-    background: var(--white); /* aka: white */
+    background: var(--white);
     padding: 5px;
-    width: 80%; /* width of div across page*/
-    margin: auto; /* center horizontally */
-    border-radius: 5px; /* will round corners a little bit */
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
 }
 
 /*header*/
 #header {
     text-align: center;
 }
+
 #main-nav ul {
-    /*remove list indent */
     padding-left: 0;
     margin: auto;
 }
+
 #main-nav li {
     list-style-type: none;
     background: var(--light-grey);
@@ -37,6 +38,7 @@ body {
     border: 1px solid var(--dark-grey);
     border-radius: 15px;
 }
+
 #main-nav a {
     text-decoration: none;
     color: var(--black);
@@ -45,83 +47,89 @@ body {
 /* Main Content */
 
 #main-content {
-   text-align: center;
-}
-.images{
-    margin:5px;
+    text-align: center;
 }
 
-img{
+.images {
+    margin: 5px;
+}
+
+img {
     border-radius: 29px;
 }
-.two ,.three {
+
+.two, .three {
     border: 2px solid var(--dark-grey);
     background: var(--light-grey);
     margin-left: 20px;
     padding: 10px;
     border-radius: 29px;
 }
-.columns1{
+
+.columns1 {
     margin-bottom: 20px;
 }
-.contact-info{
+
+.contact-info {
     border: 2px solid var(--dark-grey);
     background: var(--light-grey);
-    margin:auto;
+    margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 10px;
     border-radius: 29px; 
 }
-.contact-info h3{
-    width:30%;
+
+.contact-info h3 {
+    width: 30%;
 }
-
-
-
-
 
 /* For larger resolutions */
 @media only screen and (min-width: 768px) {
     .columns1 {
         display: flex;
-        width:80%;
-        margin:auto;
+        width: 80%;
+        margin: auto;
         margin-top: 35px;
     }
-    .columns{
-        display:flex;
+
+    .columns {
+        display: flex;
     }
+
     #main-nav {
-        display:flex;
-        
+        display: flex;
     }
+
     #main-nav li {
         text-align: center;
-        margin:40px;
+        margin: 40px;
     }
+
     #main-nav li:hover {
         border-bottom: 2px solid var(--dark-grey);
     }
+
     .img-box {
         display: flex;
-        margin:auto;
-        margin-top:5px;
+        margin: auto;
+        margin-top: 5px;
     }
+
     .contact-info {
-        display:flex;
-        width:80%;
+        display: flex;
+        width: 80%;
     }
 }
 
-
 /* For smaller resolutions */
 @media only screen and (max-width: 768px) {
-    .img-box{
-        display:flex;
+    .img-box {
+        display: flex;
     }
-    .one , .two , .three {
+
+    .one, .two, .three {
         text-align: center;
-        margin:auto;
+        margin: auto;
     }
 }
