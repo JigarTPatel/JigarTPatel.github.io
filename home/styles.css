@@ -17,7 +17,7 @@ a {
 
 #content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     background-color: #fffdfd;
     padding: 20px;
