@@ -12,7 +12,7 @@ body {
     color: var(--black);
 }
 
-/* structure */
+/* Structure */
 #content {
     background: var(--white);
     padding: 5px;
@@ -21,22 +21,21 @@ body {
     border-radius: 5px;
 }
 
-/* header */
+/* Header */
 #header {
     text-align: center;
 }
 
 #main-nav ul {
-    /* remove list indent */
+    /* Remove list indent */
     padding-left: 0;
     margin: auto;
 }
 
 #main-nav li {
     list-style-type: none;
-    background: var(--red); /* Red background added */
+    background: var(--red);
     padding: 10px;
-    border-bottom: 1px solid var(--dark-grey);
     border: 1px solid var(--dark-grey);
     border-radius: 15px;
 }
@@ -47,11 +46,6 @@ body {
 }
 
 /* Main Content */
-.save-favs {
-    margin-bottom: 30px;
-    border-bottom: 2px solid var(--dark-grey);
-    color: var(--black); /* Text color added */
-}
 
 .buttons {
     text-align: center;
@@ -65,8 +59,11 @@ body {
 button {
     width: 150px;
     height: 50px;
-    background-color: var(--red); /* Red background added */
-    color: var(--white); /* White text color added */
+    background-color: var(--red);
+    color: var(--white);
+    border: none; /* Remove default button border */
+    border-radius: 5px;
+    cursor: pointer; /* Add cursor pointer on hover */
 }
 
 /* For larger resolutions */
@@ -82,14 +79,8 @@ button {
     #main-nav li {
         text-align: center;
         margin: 40px;
-    }
-
-    #main-nav li:hover {
-        border-bottom: 2px solid var(--dark-grey);
-    }
-
-    .save-favs {
-        width: 90%;
-        margin: auto;
+        &:hover {
+            border-bottom: 2px solid var(--dark-grey);
+        }
     }
 }
