@@ -1,10 +1,10 @@
 :root {
-    --black: #000;
-    --white: #fff;
-    --red: #ff0000; /* Red color */
+    --black: #000000;
+    --white: #ffffff;
+    --red: #ff0000;
     --light-grey: #d3d3d3;
-    --dark-grey: #433f3f;
-    --bg: #fff; /* White background */
+    --dark-grey: #000000;
+    --bg: #ffffff;
 }
 
 body {

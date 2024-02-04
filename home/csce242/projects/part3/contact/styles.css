@@ -84,9 +84,4 @@ button {
     #main-nav li:hover {
         border-bottom: 2px solid var(--dark-grey);
     }
-
-    .save-favs {
-        width: 90%;
-        margin: auto;
-    }
 }
