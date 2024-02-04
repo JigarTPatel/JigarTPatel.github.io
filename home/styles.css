@@ -57,17 +57,9 @@ ol {
         flex-direction: column;
     }
 
-
-.assignment {
-    flex: 1 0 calc(33.33% - 20px); /* Adjust the percentage as needed */
-    margin: 10px;
-    box-sizing: border-box;
-}
-
-@media screen and (max-width: 768px) {
     .assignment {
         flex: 1 0 calc(100% - 20px); /* Adjust for single column on smaller screens */
+        margin: 10px;
+        box-sizing: border-box;
     }
-}
-
 }
