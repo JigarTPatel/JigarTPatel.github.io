@@ -27,7 +27,7 @@ body {
 }
 
 #main-nav ul {
-    /* Remove list indent */
+    /* remove list indent */
     padding-left: 0;
     margin: auto;
 }
@@ -45,6 +45,7 @@ body {
     text-decoration: none;
     color: var(--black);
 }
+
 
 /* Main Content */
 #main-content {
