@@ -27,26 +27,26 @@ body {
     text-align: center;
 }
 
+/* Main Navigation */
 #main-nav ul {
-    /* remove list indent */
-    padding-left: 0;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
 }
 
 #main-nav li {
-    list-style-type: none;
     background: var(--red);
     padding: 10px;
-    border-bottom: 1px solid var(--dark-grey);
-    border: 1px solid var(--dark-grey);
     border-radius: 15px;
+    margin: 0 10px;
+    border-bottom: 1px solid var(--dark-grey);
 }
 
 #main-nav a {
     text-decoration: none;
     color: var(--black);
 }
-
 
 /* Main Content */
 #main-content {
@@ -96,10 +96,11 @@ img {
 
     #main-nav li {
         text-align: center;
-        margin: 40px;
-        &:hover {
-            border-bottom: 2px solid var(--dark-grey);
-        }
+        margin: 0 20px;
+    }
+
+    #main-nav li:hover {
+        border-bottom: 2px solid var(--dark-grey);
     }
 
     .img-box {
