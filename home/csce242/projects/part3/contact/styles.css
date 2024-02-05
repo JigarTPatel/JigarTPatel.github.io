@@ -8,13 +8,13 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: var(--bg);
+    background-color: var(--bg);
     color: var(--black);
 }
 
 /* Structure */
 #content {
-    background: var(--white);
+    background-color: var(--white);
     padding: 5px;
     width: 80%;
     margin: auto;
@@ -27,14 +27,13 @@ body {
 }
 
 #main-nav ul {
-    /* Remove list indent */
     padding-left: 0;
     margin: auto;
 }
 
 #main-nav li {
     list-style-type: none;
-    background: var(--red);
+    background-color: var(--red);
     padding: 10px;
     border: 1px solid var(--dark-grey);
     border-radius: 15px;
@@ -53,7 +52,7 @@ body {
 
 .images {
     margin-right: 20px;
-    border-radius: 50%; /* Adjusted to make the image round */
+    border-radius: 50%;
 }
 
 .contact-description {
@@ -62,19 +61,12 @@ body {
 
 /* For larger resolutions */
 @media only screen and (min-width: 768px) {
-    .columns {
-        display: flex;
-    }
-
-    #main-nav {
-        display: flex;
-    }
-
     #main-nav li {
         text-align: center;
         margin: 40px;
-        &:hover {
-            border-bottom: 2px solid var(--dark-grey);
-        }
+    }
+
+    #main-nav li:hover {
+        border-bottom: 2px solid var(--dark-grey);
     }
 }
