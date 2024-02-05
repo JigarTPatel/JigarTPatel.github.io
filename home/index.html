@@ -4,20 +4,36 @@
 <head>
     <title>CSCE 242: Website Applications</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+       
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap; 
+        }
+
+        
+        .assignment,
+        .projects {
+            width: 33%; 
+            box-sizing: border-box;
+            margin: 10px; 
+        }
+    </style>
 </head>
 
 <body>
 
-    <div id="content">
+    <div id="content" class="flex-container"> 
         <header id="main-header"></header>
         <h1>CSCE 242: Website Applications</h1>
         <h2>Jigar Patel</h2>
         <p>This class is primarily to learn, design, and create websites.</p>
         <h3>Assignments</h3>
-        <ol>
+        
+        <ol class="flex-container">
             <li class="assignment">
                 <a href="csce242/assignments/02/index.html">Assignment 1: Basic HTML</a>
-                <img src="assignment1.jpg" alt="Assignment 1 Image"> 
+                <img src="assignment1.jpg" alt="Assignment 1 Image">
                 <p class="assignment-text">This assignment was to create a website on a topic of choice. I chose Ferrari F1.</p>
             </li>
             <li class="assignment">
@@ -51,21 +67,23 @@
                 <p class="assignment-text">This assignment is to use HTML and CSS to create a page.</p>
             </li>
         </ol>
+
         <h3>Projects</h3>
-        <ol>
+      
+        <ol class="flex-container">
             <li class="projects">
                 <a href="csce242/projects/part1/Semester Project Part 1_ Topic Selection (1).pdf">Project Part 1: Topic Selection</a>
-                <img src="assignment4.jpg" alt="Assignment 5 Image"> 
+                <img src="assignment4.jpg" alt="Assignment 5 Image">
                 <p class="assignment-text">This assignment was to create a PDF with information dealing with the creation of a website. I used my parents' business JP Liquor as my example as I want to create a website for them.</p>
             </li>
             <li class="projects">
                 <a href="csce242/projects/part2/index.html">Project Part 2: Wireframes</a>
-                <img src="projectpart2.jpg" alt="Assignment 7 Image"> 
+                <img src="projectpart2.jpg" alt="Assignment 7 Image">
                 <p class="assignment-text">This assignment was to create a Wireframe for my JP Liquor Website. Simple layout for now.</p>
             </li>
             <li class="projects">
                 <a href="csce242/projects/part3/home/index.html">Project Part 3: HTML CSS Website</a>
-                <img src="projectpart3.jpg" alt="Assignment 8 Image"> 
+                <img src="projectpart3.jpg" alt="Assignment 8 Image">
                 <p class="assignment-text">This assignment was to implement a Wireframe for my JP Liquor Website.</p>
             </li>
         </ol>
