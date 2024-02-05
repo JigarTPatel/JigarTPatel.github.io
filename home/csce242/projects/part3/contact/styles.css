@@ -46,24 +46,18 @@ body {
 }
 
 /* Main Content */
-
-.buttons {
-    text-align: center;
-    margin-top: 40px;
+.contact-content {
+    display: flex;
+    align-items: center;
 }
 
-.btn-section {
-    margin-bottom: 20px;
+.images {
+    margin-right: 20px;
+    border-radius: 50%; /* Adjusted to make the image round */
 }
 
-button {
-    width: 150px;
-    height: 50px;
-    background-color: var(--red);
-    color: var(--white);
-    border: none; /* Remove default button border */
-    border-radius: 5px;
-    cursor: pointer; /* Add cursor pointer on hover */
+.contact-description {
+    flex-grow: 1;
 }
 
 /* For larger resolutions */
