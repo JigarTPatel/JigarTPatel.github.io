@@ -34,7 +34,7 @@ body {
 
 #main-nav li {
     list-style-type: none;
-    background: var(--dark-grey);
+    background: var(--red);
     padding: 10px;
     border-bottom: 1px solid var(--dark-grey);
     border-radius: 15px;
@@ -60,7 +60,7 @@ img {
 
 .two, .three {
     border: 2px solid var(--dark-grey);
-    background: var(--dark-grey);
+    background: var(--bg);
     margin-left: 20px;
     padding: 10px;
     border-radius: 29px;
