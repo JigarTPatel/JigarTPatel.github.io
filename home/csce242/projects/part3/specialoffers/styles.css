@@ -11,7 +11,7 @@ body {
     background: var(--bg);
 }
 
-/* structure */ 
+/* Structure */
 #content {
     background: var(--white);
     padding: 5px;
@@ -20,7 +20,7 @@ body {
     border-radius: 5px;
 }
 
-/*header*/
+/* Header */
 #header {
     text-align: center;
 }
@@ -34,7 +34,6 @@ body {
     list-style-type: none;
     background: var(--red); /* Changed to red */
     padding: 10px;
-    border-bottom: 1px solid var(--dark-grey);
     border: 1px solid var(--dark-grey);
     border-radius: 15px;
 }
@@ -87,10 +86,9 @@ body {
     #main-nav li {
         text-align: center;
         margin: 40px;
-    }
-
-    #main-nav li:hover {
-        border-bottom: 2px solid var(--dark-grey);
+        &:hover {
+            border-bottom: 2px solid var(--dark-grey);
+        }
     }
 
     .creator-content {
