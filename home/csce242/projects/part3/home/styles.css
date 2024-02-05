@@ -37,7 +37,6 @@ body {
     background: var(--red);
     padding: 10px;
     border-bottom: 1px solid var(--dark-grey);
-    border: 1px solid var(--dark-grey);
     border-radius: 15px;
 }
 
