@@ -1,9 +1,9 @@
 /* styles */
 :root {
-    --blue: #5D878C;
-    --bg: #F1F2E9;
-    --pink: #D98282;
-    --yellow: #F2F0D5;
+    --blue: #3d838a;
+    --bg: #e7e7e7;
+    --lightwhitepink: #fed4d4;
+    --yellow: #e7df66;
     --white: #fff;
     --red-orange: #ff4000;
 }
@@ -120,14 +120,14 @@ input[type="range"]::-webkit-slider-thumb {
     appearance: none;
     width: 20px;
     height: 20px;
-    background-color: var(--pink);
+    background-color: var(--lightwhitepink);
     cursor: pointer;
 }
 
 input[type="range"]::-moz-range-thumb {
     width: 20px;
     height: 20px;
-    background-color: var(--pink);
+    background-color: var(--lightwhitepink);
     cursor: pointer;
 }
 
