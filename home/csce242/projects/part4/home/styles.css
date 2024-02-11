@@ -53,20 +53,11 @@ body {
     text-align: center;
 }
 
-.images {
-    margin: 5px;
-}
-
-.images img {
-    width: 75px;
-    height: 75px;
-    border-radius: 29px; 
-}
 
 
 img {
     border-radius: 29px;
-    max-width: 50%;
+    max-width: 75%;
 }
 
 .two, .three {
