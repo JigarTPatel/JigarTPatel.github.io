@@ -54,6 +54,10 @@ header {
 #slider {
     width: 80%;
 }
+.yoga-slider img {
+    max-width: 60%; /* Adjust this value to your desired maximum width */
+    height: auto;
+}
 
 /* Enter command section */
 .enter-command {
