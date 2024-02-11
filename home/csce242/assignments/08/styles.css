@@ -64,6 +64,10 @@ header {
     display: none;
     text-align: center;
 }
+.enter-command img {
+    max-width: 60%; /* Adjust this value to your desired maximum width */
+    height: auto;
+}
 
 #commandInput {
     margin-top: 10px;
