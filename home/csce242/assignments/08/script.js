@@ -16,9 +16,10 @@ function showEnterCommand() {
 }
 
 function changeImage(value) {
-    var imageSrc = "images/yoga" + value + ".jpg";
+    var imageSrc = "images/yogaImage" + value + ".jpg";
     document.getElementById('yogaImage').src = imageSrc;
 }
+
 
 function checkCommand() {
     var commandInput = document.getElementById('commandInput').value.toLowerCase();
