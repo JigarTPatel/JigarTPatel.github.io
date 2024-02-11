@@ -56,11 +56,11 @@ body {
 .images {
     margin: 5px;
 }
-/* Add this to your styles.css file or include it in your existing CSS */
+
 .images img {
     width: 75px;
     height: 75px;
-    border-radius: 29px; /* You can adjust the border-radius as needed */
+    border-radius: 29px; 
 }
 
 
