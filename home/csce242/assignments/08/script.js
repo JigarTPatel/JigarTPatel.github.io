@@ -16,7 +16,7 @@ function showEnterCommand() {
 }
 
 function changeImage(value) {
-    var imageSrc = "images/yogaImage" + value + ".jpg";
+    var imageSrc = "images/yoga" + value + ".jpg";
     document.getElementById('yogaImage').src = imageSrc;
 }
 
@@ -27,16 +27,29 @@ function checkCommand() {
 
     switch (commandInput) {
         case 'a':
-            commandResult.innerHTML = "Playing basketball image: <img src='images/Image1.png' alt='Playing Basketball'>";
+            commandResult.innerHTML = "Work image: <img src='work.jpg' alt='Work'>";
             break;
         case 'b':
-            commandResult.innerHTML = "Reading a book image: <img src='images/Image2.png' alt='Reading a Book'>";
+            commandResult.innerHTML = "Shovel image: <img src='shovel.jpg' alt='Shovel'>";
             break;
         case 'c':
-            commandResult.innerHTML = "Playing Soccer: <img src='images/Image3.jpg' alt='Playing Soccer'>";
+            commandResult.innerHTML = "Read image: <img src='read.jpg' alt='Read'>";
+            break;
+        case 'd':
+            commandResult.innerHTML = "Rain image: <img src='rain.jpg' alt='Rain'>";
+            break;
+        case 'e':
+            commandResult.innerHTML = "Original image: <img src='original.jpg' alt='Original'>";
+            break;
+        case 'f':
+            commandResult.innerHTML = "Clown image: <img src='clown.jpg' alt='Clown'>";
+            break;
+        case 'g':
+            commandResult.innerHTML = "Birthday image: <img src='birthday.jpg' alt='Birthday'>";
             break;
         default:
             commandResult.innerHTML = "Invalid command. Image by <a href='https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20856908.htm#query=stick%20figure&position=1&from_view=keyword&track=ais&uuid=12d17ea3-cffc-4386-9be4-ff9dc4b5edc2'>Freepik</a>";
             break;
     }
 }
+
