@@ -54,7 +54,7 @@ header {
 }
 
 #slider {
-    width: 80%;
+    width: 75%;
 }
 .yoga-slider img {
     max-width: 60%; 
@@ -70,7 +70,7 @@ header {
     border-radius: 10px; 
 }
 .enter-command img {
-    max-width: 60%;
+    max-width: 50%;
     height: auto;
 }
 
