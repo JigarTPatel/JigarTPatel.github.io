@@ -21,6 +21,7 @@ header {
 .toggle-menu {
     cursor: pointer;
     font-size: 24px;
+    color: orange; 
 }
 
 .menu-items {
@@ -37,7 +38,7 @@ header {
 
 .menu-items a {
     text-decoration: none;
-    color: #333;
+    color: #ff9933; 
 }
 
 .yoga-slider {
@@ -55,10 +56,12 @@ header {
 
 #commandInput {
     margin-top: 10px;
+    background-color: #ff9933; 
+    color: #fff; 
 }
 
 #commandResult {
     margin-top: 10px;
+    color: #fff; 
 }
 
-/* Add additional styles as needed */
