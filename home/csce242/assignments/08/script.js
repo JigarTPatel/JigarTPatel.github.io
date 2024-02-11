@@ -1,4 +1,3 @@
-// Emma Hubert
 
 let rotationAngle =0;
 
@@ -68,11 +67,6 @@ document.getElementById("command").onkeyup= changePic;
 document.getElementById("exercise2").onclick= showHide2;
 document.getElementById("exercise1").onclick= showHide1;
 
-
-
-/*
-Code help and referenced from W3 schools and chatgpt, used a combination of both examples to create and customize the slider 
-*/
 
 document.addEventListener("DOMContentLoaded", function() {
     const slider = document.getElementById("myRange");
