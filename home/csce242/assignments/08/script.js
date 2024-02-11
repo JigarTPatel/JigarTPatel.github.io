@@ -1,4 +1,4 @@
-
+// script.js
 let rotationAngle =0;
 
 const showHideNav = () => {
@@ -10,6 +10,7 @@ const showHideNav = () => {
     }
     rotateTriangle();
 };
+
 
 
 const changePic = () => {
@@ -34,10 +35,7 @@ const changePic = () => {
     if(commandPic == "w") {
         pic.src="images/work.jpg";
     }
-    
-    
 };
-
 const showHide2 = () => {
     
     const yoga = document.getElementById("section2");
@@ -48,7 +46,6 @@ const showHide2 = () => {
     picCommand.style.display = "none";
     
 };
-
 const showHide1 = () => {
    
     const yoga = document.getElementById("section2");
@@ -60,7 +57,6 @@ const showHide1 = () => {
 
     
 };
-
 
 document.getElementById("hamburger").onclick = showHideNav;
 document.getElementById("command").onkeyup= changePic;

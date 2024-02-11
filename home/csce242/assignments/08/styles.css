@@ -1,20 +1,14 @@
+/* styles */
 :root {
     --blue: #5D878C;
     --bg: #F1F2E9;
     --pink: #D98282;
     --yellow: #F2F0D5;
     --white: #fff;
+    --red-orange: #ff4000;
 }
 
-
-
-/* Hamburger */
-
 #hamburger div {
-   /* width: 25px;
-    height: 2px;
-    background-color: black;
-    margin: 6px 0;*/
     width: 0;
 	height: 0;
 	border-left: 10px solid transparent;
@@ -33,11 +27,6 @@
 #main-nav li {
     color: var(--blue);
 }
-
-
-
-/* Structure */ 
-
 
 #section2 {
     display: none;
@@ -85,13 +74,6 @@ p{
     color: black;
 }
 
-
-
-
-
-
-/*Picture commands*/
-
 .exercises {
     color: var(--blue);
 }
@@ -113,9 +95,6 @@ input {
     max-width: 80%;
     max-height: 200px;
 }
-
-
-/* picture silder*/ 
 
 #exercise2:hover {
     cursor: pointer;
@@ -158,13 +137,14 @@ span {
     margin-top: 10px;
 }
 
-
-/* Typography */
-
-h1 , h2 {
+h1 {
     color: var(--blue);
     text-align: center;
     
+}
+h2 {
+    color: var(--red-orange);
+    text-align: center;
 }
 
 /* For larger resolutions */
