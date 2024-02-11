@@ -57,26 +57,26 @@ header {
     width: 80%;
 }
 .yoga-slider img {
-    max-width: 60%; /* Adjust this value to your desired maximum width */
+    max-width: 60%; 
     height: auto;
 }
 
-/* Enter command section */
+
 .enter-command {
     display: none;
     text-align: center;
-    background-color: #fff; /* White background color for the enter-command section */
+    background-color: #fff; 
     padding: 20px;
-    border-radius: 10px; /* Optional: Add rounded corners */
+    border-radius: 10px; 
 }
 .enter-command img {
-    max-width: 60%; /* Adjust this value to your desired maximum width */
+    max-width: 60%;
     height: auto;
 }
 
 #commandInput {
     margin-top: 10px;
-    background-color: #ff9933;
+    background-color: #ffe8d2;
     color: #fff;
     padding: 8px; 
 }
