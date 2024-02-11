@@ -1,38 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Flexbox and Slider Assignment</title>
-</head>
-<body>
+<html>
+    <head>
+        <title>Assignment 08</title>
+        <link rel="stylesheet" href = "styles.css">
+    </head>
 
-<div class="container">
-    <header>
-        <h1>If Statement Assignment</h1>
-        <nav class="menu-bar">
-            <div class="toggle-menu" onclick="toggleMenu()">&#9660;</div>
-            <ul class="menu-items">
-                <li><a href="#" onclick="showYogaSlider()">Yoga Slider</a></li>
-                <li><a href="#" onclick="showEnterCommand()">Enter Command</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="yoga-slider">
-        <input type="range" min="1" max="8" value="1" id="slider" oninput="changeImage(this.value)">
-        <img id="yogaImage" src="images/yoga1.jpg" alt="Yoga Image">
-    </section>
-
-    <section class="enter-command">
-        <label for="commandInput">Enter Command:</label>
-        <input type="text" id="commandInput" onkeyup="checkCommand()">
-        <p>Type "a" for Work, "b" for Shovel, "c" for Read, "d" for Rain, "e" for Original, "f" for Clown, "g" for Birthday</p>
-        <p id="commandResult">Image by <a href="https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20856908.htm#query=stick%20figure&position=1&from_view=keyword&track=ais&uuid=12d17ea3-cffc-4386-9be4-ff9dc4b5edc2">Freepik</a></p>
-    </section>
-</div>
-
-<script src="script.js"></script>
-</body>
+    <body>
+        <div id ="content">
+            <header> 
+                <h1>Assignment 08</h1>
+                <h2>Conditionals</h2>
+                <nav id="main-nav">
+                    <div id="hamburger">
+                        <div></div>
+                    </div>
+                    <ul id="exercises" class="hide-small">
+                        <li id="exercise1">Exercise 1</li>
+                        <li id="exercise2">Exercise 2</li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="columns">
+                <section id="section1" class="column1" >
+                    <h3>Enter Command</h3>
+                    <ul class="commands">
+                        <li>b: Read a book</li>
+                        <li>c: Act like a clown</li>
+                        <li>p: Have a birthday party</li>
+                        <li>r: Walk in the rain</li>
+                        <li>s: Shovel up some dirt</li>
+                        <li>w: Go to work</li>
+                    </ul>
+                    <input type="text" id="command">
+                    <img id="swap" src="images/shovel.jpg">
+                    <p>
+                        Image by
+                        <a href="https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20856908.htm#query=stick%20figure&position=1&from_view=keyword&track=ais&uuid=12d17ea3-cffc-4386-9be4-ff9dc4b5edc2">Freepik</a>
+                    </p>
+                </section>
+                <section id="section2" class="hide-yoga">
+                    <h3>Yoga Slide</h3>
+                    <div class="image-container">
+                        <img id="image-slide" src="images/yoga1.jpg">
+                      </div>
+                    <div class="slider-container">
+                        <input type="range" class="slider" id="myRange" min="1" max="8" value="1" >
+                    </div>
+                </section>
+               
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>

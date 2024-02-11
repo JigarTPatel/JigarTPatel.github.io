@@ -1,54 +1,111 @@
-function toggleMenu() {
-    var menuItems = document.querySelector('.menu-items');
-    menuItems.style.display = (menuItems.style.display === 'none' || menuItems.style.display === '') ? 'flex' : 'none';
-}
 
-function showYogaSlider() {
-    document.querySelector('.yoga-slider').style.display = 'block';
-    document.querySelector('.enter-command').style.display = 'none';
-    document.getElementById('optionsExplanation').innerText = 'Yoga Slider: Slide through different yoga images.';
-}
+let rotationAngle =0;
 
-function showEnterCommand() {
-    document.querySelector('.enter-command').style.display = 'block';
-    document.querySelector('.yoga-slider').style.display = 'none';
-    document.getElementById('optionsExplanation').innerText = 'Enter Command: Type "a" to play basketball, "b" to read a book, or "c" to shovel up some dirt.';
-}
-
-function changeImage(value) {
-    var imageSrc = "images/yoga" + value + ".jpg";
-    document.getElementById('yogaImage').src = imageSrc;
-}
-
-
-function checkCommand() {
-    var commandInput = document.getElementById('commandInput').value.toLowerCase();
-    var commandResult = document.getElementById('commandResult');
-
-    switch (commandInput) {
-        case 'a':
-            commandResult.innerHTML = "Work image: <img src='images/work.jpg' alt='Work'>";
-            break;
-        case 'b':
-            commandResult.innerHTML = "Shovel image: <img src='images/shovel.jpg' alt='Shovel'>";
-            break;
-        case 'c':
-            commandResult.innerHTML = "Read image: <img src='images/read.jpg' alt='Read'>";
-            break;
-        case 'd':
-            commandResult.innerHTML = "Rain image: <img src='images/rain.jpg' alt='Rain'>";
-            break;
-        case 'e':
-            commandResult.innerHTML = "Original image: <img src='images/original.jpg' alt='Original'>";
-            break;
-        case 'f':
-            commandResult.innerHTML = "Clown image: <img src='images/clown.jpg' alt='Clown'>";
-            break;
-        case 'g':
-            commandResult.innerHTML = "Birthday image: <img src='images/birthday.jpg' alt='Birthday'>";
-            break;
-        default:
-            commandResult.innerHTML = "Invalid command. Image by <a href='https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20856908.htm#query=stick%20figure&position=1&from_view=keyword&track=ais&uuid=12d17ea3-cffc-4386-9be4-ff9dc4b5edc2'>Freepik</a>";
-            break;
+const showHideNav = () => {
+    document.getElementById("exercises").classList.toggle("hide-small");
+    const triangle = document.getElementById("hamburger");
+    function rotateTriangle(angle) {
+        rotationAngle+=180;
+        triangle.style.transform= 'rotate( '+rotationAngle+ 'deg)';
     }
-}
+    rotateTriangle();
+};
+
+
+const changePic = () => {
+    
+    const pic = document.getElementById("swap");
+    const commandPic = document.getElementById("command").value;
+    if(commandPic == "b") {
+        pic.src="images/read.jpg";
+    }
+    if(commandPic == "c") {
+        pic.src="images/clown.jpg";
+    }
+    if(commandPic == "p") {
+        pic.src="images/birthday.jpg";
+    }
+    if(commandPic == "r") {
+        pic.src="images/rain.jpg";
+    }
+    if(commandPic == "s") {
+        pic.src="images/shovel.jpg";
+    }
+    if(commandPic == "w") {
+        pic.src="images/work.jpg";
+    }
+    
+    
+};
+
+const showHide2 = () => {
+    
+    const yoga = document.getElementById("section2");
+    const picCommand = document.getElementById("section1");
+    if(yoga.style.display == "none") {
+        yoga.style.display = "block";
+    }
+    picCommand.style.display = "none";
+    
+};
+
+const showHide1 = () => {
+   
+    const yoga = document.getElementById("section2");
+    const picCommand = document.getElementById("section1");
+    if(picCommand.style.display == "none") {
+        picCommand.style.display = "block";
+    }
+    yoga.style.display = "none";
+
+    
+};
+
+
+document.getElementById("hamburger").onclick = showHideNav;
+document.getElementById("command").onkeyup= changePic;
+document.getElementById("exercise2").onclick= showHide2;
+document.getElementById("exercise1").onclick= showHide1;
+
+
+
+/*
+Code help and referenced from W3 schools and chatgpt, used a combination of both examples to create and customize the slider 
+*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    const slider = document.getElementById("myRange");
+    const image = document.getElementById("image-slide");
+  
+    slider.addEventListener("input", function() {
+      const value = parseInt(this.value);
+      switch (value) {
+        case 1:
+            image.src = "images/yoga1.jpg";
+            break;
+        case 2:
+            image.src = "images/yoga2.jpg";
+            break;
+        case 3:
+            image.src = "images/yoga3.jpg";
+            break;
+        case 4:
+            image.src = "images/yoga4.jpg";
+            break;  
+        case 5:
+            image.src = "images/yoga5.jpg";
+            break; 
+        case 6:
+            image.src = "images/yoga6.jpg";
+            break;
+        case 7:
+            image.src = "images/yoga7.jpg";
+            break;  
+        case 8:
+            image.src = "images/yoga8.jpg";
+            break;            
+        default:
+          break;
+      }
+    });
+}); 
