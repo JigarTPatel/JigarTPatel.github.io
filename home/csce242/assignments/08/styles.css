@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-menu {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.menu-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.menu-items li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #333;
+}
+
+.yoga-slider {
+    text-align: center;
+}
+
+#slider {
+    width: 80%;
+}
+
+.enter-command {
+    display: none;
+    text-align: center;
+}
+
+#commandInput {
+    margin-top: 10px;
+}
+
+#commandResult {
+    margin-top: 10px;
+}
+
+/* Add additional styles as needed */
