@@ -26,10 +26,10 @@ function checkCommand() {
 
     switch (commandInput) {
         case 'a':
-            commandResult.innerHTML = "Playing basketball image: <img src='images/Image1.jpg' alt='Playing Basketball'>";
+            commandResult.innerHTML = "Playing basketball image: <img src='images/Image1.png' alt='Playing Basketball'>";
             break;
         case 'b':
-            commandResult.innerHTML = "Reading a book image: <img src='images/Image2.jpg' alt='Reading a Book'>";
+            commandResult.innerHTML = "Reading a book image: <img src='images/Image2.png' alt='Reading a Book'>";
             break;
         case 'c':
             commandResult.innerHTML = "Playing Soccer: <img src='images/Image3.jpg' alt='Playing Soccer'>";
