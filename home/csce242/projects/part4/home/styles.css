@@ -59,6 +59,7 @@ body {
 
 img {
     border-radius: 29px;
+    max-width: 50%;
 }
 
 .two, .three {
