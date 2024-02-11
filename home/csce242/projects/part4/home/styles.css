@@ -74,9 +74,10 @@ img {
     height: 100%;
     margin:x;
 }
-.img-box{border-radius: 29px;
+.img-box{
+    border-radius: 31px;
     max-width: 75%;
-    height: 75%;
+    height: 50%;
     margin:x; /* Updated: Add margin for spacing between images */
 }
 .columns1 {
