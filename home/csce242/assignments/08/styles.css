@@ -1,46 +1,52 @@
+/* Reset default styles */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
 }
 
+/* Page container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Header styles */
 header {
     text-align: center;
 }
 
+/* Navigation bar */
 .menu-bar {
     display: flex;
     align-items: center;
 }
 
+/* Toggle menu icon */
 .toggle-menu {
     cursor: pointer;
     font-size: 24px;
-    color: orange; 
+    color: orange;
 }
 
+/* Navigation items list */
 .menu-items {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: none;
+    display: flex;
 }
 
 .menu-items li {
-    display: inline;
     margin-right: 10px;
 }
 
 .menu-items a {
     text-decoration: none;
-    color: #ff9933; 
+    color: #ff9933;
 }
 
+/* Yoga slider section */
 .yoga-slider {
     text-align: center;
 }
@@ -49,6 +55,7 @@ header {
     width: 80%;
 }
 
+/* Enter command section */
 .enter-command {
     display: none;
     text-align: center;
@@ -56,12 +63,14 @@ header {
 
 #commandInput {
     margin-top: 10px;
-    background-color: #ff9933; 
-    color: #fff; 
+    background-color: #ff9933;
+    color: #fff;
+    padding: 8px; /* Add some padding for better visual appeal */
 }
 
 #commandResult {
     margin-top: 10px;
-    color: #fff; 
+    color: #fff;
 }
 
+/* Additional styling for specific scenarios can be added here */
