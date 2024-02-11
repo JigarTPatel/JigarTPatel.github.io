@@ -65,12 +65,16 @@ header {
     margin-top: 10px;
     background-color: #ff9933;
     color: #fff;
-    padding: 8px; /* Add some padding for better visual appeal */
+    padding: 8px; 
 }
 
 #commandResult {
     margin-top: 10px;
     color: #fff;
 }
-
-/* Additional styling for specific scenarios can be added here */
+/* Larger Resolutions */
+@media only screen and (min-width: 600px) {
+    .flex-container {
+      display: flex;
+    }
+}
