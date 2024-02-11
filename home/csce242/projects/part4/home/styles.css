@@ -57,7 +57,8 @@ body {
 
 img {
     border-radius: 29px;
-    max-width: 75%;
+    max-width: 100%; /* Allow images to scale within their containers */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .two, .three {
