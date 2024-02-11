@@ -1,14 +1,16 @@
-/* Reset default styles */
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    background-color: #f1f1d8;
 }
 
-/* Page container */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #fff; 
 }
 
 /* Header styles */
@@ -63,6 +65,9 @@ header {
 .enter-command {
     display: none;
     text-align: center;
+    background-color: #fff; /* White background color for the enter-command section */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Add rounded corners */
 }
 .enter-command img {
     max-width: 60%; /* Adjust this value to your desired maximum width */
