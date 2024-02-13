@@ -118,7 +118,6 @@ img {
         display: flex;
         margin: auto;
         margin-top: 5px;
-        max-width: 100%;
     }
 
     .contact-info {
@@ -128,11 +127,12 @@ img {
 
 /* For smaller resolutions */
 @media only screen and (max-width: 768px) {
-
+    .img-box {
+        display: flex;
+    }
 
     .one, .two, .three {
         text-align: center;
         margin: auto;
-        max-width: 50%;
     }
 }
