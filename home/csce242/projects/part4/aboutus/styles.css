@@ -13,7 +13,7 @@ body {
     max-width: 100%;
 }
 
-/* structure */
+/* Structure */
 #content {
     background: var(--white);
     padding: 5px;
@@ -22,24 +22,25 @@ body {
     border-radius: 5px;
 }
 
-/* header */
+/* Header */
 #header {
     text-align: center;
 }
 
+/* Main Navigation */
 #main-nav ul {
-    /* remove list indent */
-    padding-left: 0;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
 }
 
 #main-nav li {
-    list-style-type: none;
     background: var(--red);
     padding: 10px;
-    border-bottom: 1px solid var(--dark-grey);
-    border: 1px solid var(--dark-grey);
     border-radius: 15px;
+    margin: 0 10px;
+    border-bottom: 1px solid var(--dark-grey);
 }
 
 #main-nav a {
@@ -48,60 +49,79 @@ body {
 }
 
 /* Main Content */
-.name {
+#main-content {
     text-align: center;
 }
 
 .images {
-    border-radius: 20px;
+    margin: 5px;
 }
 
-.brand {
-    border-radius: 20px;
-    background: var(--red);
-    border: 1px solid var(--dark-grey);
-    text-align: center;
-    padding: 20px;
-    color: var(--white);
+img {
+    border-radius: 29px;
+}
+
+.two, .three {
+    border: 2px solid var(--dark-grey);
+    background: var(--bg);
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 29px;
+}
+
+.columns1 {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    border: 2px solid var(--dark-grey);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 29px;
+}
+
+.contact-info h3 {
+    width: 30%;
 }
 
 /* For larger resolutions */
 @media only screen and (min-width: 768px) {
-    .columns {
+    .columns1, .columns, #main-nav, .img-box, .contact-info {
         display: flex;
-    }
-
-    #main-nav {
-        display: flex;
+        width: 80%;
+        margin: auto;
     }
 
     #main-nav li {
         text-align: center;
-        margin: 40px;
+        margin: 0 20px;
     }
 
     #main-nav li:hover {
         border-bottom: 2px solid var(--dark-grey);
     }
 
-    .brand-box {
+    .img-box {
         display: flex;
-        width: 80%;
         margin: auto;
+        margin-top: 5px;
     }
 
-    .brand {
-        width: 100%;
-        margin: 30px;
-        margin-left: 40px;
-        margin-right: 40px;
-        padding: 20px;
+    .contact-info {
+        width: 80%;
     }
 }
 
 /* For smaller resolutions */
 @media only screen and (max-width: 768px) {
-    .brand {
-        margin: 20px;
+    .img-box {
+        display: flex;
+    }
+
+    .one, .two, .three {
+        text-align: center;
+        margin: auto;
     }
 }
