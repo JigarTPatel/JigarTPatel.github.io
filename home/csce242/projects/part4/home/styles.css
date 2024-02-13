@@ -118,7 +118,7 @@ img {
         display: flex;
         margin: auto;
         margin-top: 5px;
-        max-width: 1%;
+        max-width: 100%;
     }
 
     .contact-info {
