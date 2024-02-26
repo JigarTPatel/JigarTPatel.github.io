@@ -6,7 +6,6 @@
     --bg: #abc;
 }
 
-/* Reset some default styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -94,4 +93,3 @@ p {
     line-height: 1.5;
 }
 
-/* Add more styles as needed */
