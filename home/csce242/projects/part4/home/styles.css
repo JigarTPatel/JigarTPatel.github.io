@@ -75,29 +75,31 @@ body {
 }
 
 .one {
+    flex: 1;
     display: flex;
 }
 
 .img-box {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex: 1;
 }
 
 .images img {
-    width: calc(50% - 10px); /* 2 images in a row with 10px gap */
+    width: 75%;
     height: auto;
     margin-bottom: 10px;
 }
 
-.two, .three {
+.two {
     flex: 1;
+}
+.two, .three {
     border: 2px solid var(--dark-grey);
     background: var(--bg);
     margin-left: 20px;
     padding: 10px;
     border-radius: 29px;
 }
+
 
 h3 {
     color: var(--black);
