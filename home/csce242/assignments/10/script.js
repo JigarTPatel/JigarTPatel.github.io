@@ -4,13 +4,10 @@ images["<img src= 'images/golden.jpg'/>"]= '<a href="https://www.freepik.com/fre
 images["<img src= 'images/mountain-lake.jpg'/>"]= '<a href="https://www.freepik.com/free-photo/amazing-shot-beautiful-butchart-gardens-brentwood-bay_20496783.htm#query=landscape&position=27&from_view=keyword&track=sph&uuid=16f8afcf-90c6-4cae-8249-a03fef90c6f4"> Image by wirestock </a>on Freepik';
 images["<img src= 'images/small-house.jpg'/>"]= '<a href="https://www.freepik.com/free-photo/small-houses-green-field-with-dark-sky_7553929.htm#query=landscape&position=39&from_view=keyword&track=sph&uuid=16f8afcf-90c6-4cae-8249-a03fef90c6f4"> Image by wirestock </a>on Freepik';
 images["<img src= 'images/snow.jpg'/>"]= '<a href="https://www.freepik.com/free-photo/beautiful-scenery-lot-leafless-trees-snow-covered-land-during-sunset_10990489.htm#query=landscape&position=38&from_view=keyword&track=sph&uuid=16f8afcf-90c6-4cae-8249-a03fef90c6f4"> Image by wirestock </a>on Freepik' ;
-
-
 const slide = () => {
     const currentAd = document.querySelector("#banner-div :not(.hidden)");
     let nextAd = currentAd.nextElementSibling; 
 
-    //on the last Ad
     if(nextAd == null) {
         nextAd = document.querySelector("#banner-div :first-child");
     }
@@ -19,7 +16,6 @@ const slide = () => {
     nextAd.classList.remove("hidden");
     
 }
-
 setInterval(slide, 2000);
 
 const showImageA = () => {
@@ -34,5 +30,4 @@ const showImageA = () => {
 
     }
 }
-
 showImageA();

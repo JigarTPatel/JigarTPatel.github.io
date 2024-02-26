@@ -1,8 +1,8 @@
 :root {
-    --blue: #5D878C;
-    --bg: #F1F2E9;
-    --pink: #D98282;
-    --yellow: #F2F0D5;
+    --blue: #5f8b90;
+    --bg: #f6f7ef;
+    --pink: #d98484;
+    --yellow: #ebe9ca;
     --white: #fff;
 }
 
@@ -30,8 +30,6 @@ body {
     text-align: center;
 }
 
-/*banner*/
-
 .hidden , #attribute {
     display: none;
 }
@@ -40,7 +38,6 @@ body {
     text-align: center;
 }
 
-/*images*/ 
 #images-attributes {
     width: 100%;
     margin: auto;
@@ -52,8 +49,6 @@ img {
     margin:auto;
     border: 2px solid var(--blue);
 }
-
-/*typography*/ 
 
 h1{
     color: var(--blue);
