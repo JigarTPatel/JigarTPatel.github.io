@@ -64,7 +64,7 @@ body {
 }
 
 .carousel {
-    width: 50%; /* Adjusted width */
+    width: 48%; /* Adjusted width */
     max-width: 800px; /* Set a maximum width if needed */
     height: auto;
     margin: 0 auto; /* Center the image horizontally */
