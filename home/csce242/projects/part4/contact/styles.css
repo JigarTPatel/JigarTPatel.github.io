@@ -79,7 +79,12 @@ body {
 }
 
 .contact-description {
-    flex: 1;
+flex: 1;
+border: 2px solid var(--dark-grey);
+background: var(--bg);
+margin-left: 20px;
+padding: 10px;
+border-radius: 29px;
 }
 
 h3 {
