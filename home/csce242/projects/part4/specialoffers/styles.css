@@ -74,9 +74,13 @@ body {
     margin-right: 20px;
 }
 
-.specialoffers-content {
-    flex: 1;
-}
+.specialoffers-content {flex: 1;
+    border: 2px solid var(--dark-grey);
+    background: var(--bg);
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 29px;
+    }
 
 h3 {
     color: var(--black);
