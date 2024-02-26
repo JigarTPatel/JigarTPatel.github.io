@@ -34,7 +34,8 @@ body {
 }
 
 #header img {
-    max-width: 100%;
+    max-width: 800px;
+    max-height: 200px; 
     height: auto;
 }
 
