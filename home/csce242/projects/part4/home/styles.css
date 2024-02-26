@@ -64,8 +64,10 @@ body {
 }
 
 .carousel {
-    width: 68%;
+    width: 50%; /* Adjusted width */
+    max-width: 800px; /* Set a maximum width if needed */
     height: auto;
+    margin: 0 auto; /* Center the image horizontally */
 }
 
 .columns1 {
@@ -84,22 +86,19 @@ body {
 }
 
 .images img {
-    width: 75%;
+    width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
 
-.two {
-    flex: 1;
-}
 .two, .three {
+    flex: 1;
     border: 2px solid var(--dark-grey);
     background: var(--bg);
     margin-left: 20px;
     padding: 10px;
     border-radius: 29px;
 }
-
 
 h3 {
     color: var(--black);
