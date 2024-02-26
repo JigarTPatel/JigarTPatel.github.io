@@ -84,7 +84,7 @@ body {
 }
 
 .images img {
-    width: 100%;
+    width: 75%;
     height: auto;
     margin-bottom: 10px;
 }
@@ -92,6 +92,14 @@ body {
 .two {
     flex: 1;
 }
+.two, .three {
+    border: 2px solid var(--dark-grey);
+    background: var(--bg);
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 29px;
+}
+
 
 h3 {
     color: var(--black);
