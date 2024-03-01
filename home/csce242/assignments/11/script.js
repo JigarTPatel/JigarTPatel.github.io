@@ -49,7 +49,6 @@ function addTreesToHome() {
     });
 }
 addTreesToHome();
-
 document.querySelectorAll(".columns section").forEach((section, index) => {
     section.onclick = (e) => {
         document.getElementById("dialog").style.display = "block";
@@ -59,7 +58,6 @@ document.querySelectorAll(".columns section").forEach((section, index) => {
         dialogDetails.appendChild(selectedTree.getExpandedSection());
     };
 });
-
 document.getElementById("dialog-close").onclick = () => {
     document.getElementById("dialog").style.display = "none";
 };
