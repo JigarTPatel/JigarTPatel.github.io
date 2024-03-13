@@ -19,24 +19,27 @@ const showHouses = async() => {
 }
 
 const getHouseSection = (house) => {
-    //create section for house content
+
     const section = document.createElement("section");
+
     section.className = "house-info";
-    //add name of house at top
+
     const nameHeader = document.createElement("h2");
+
     nameHeader.textContent = house.name;
+
     section.appendChild(nameHeader);
-    //create section for main image and description to flex
+
     const houseDiv = document.createElement("section");
     houseDiv.id = "house";
 
-    // Display main image
     const mainImage = document.createElement("img");
     mainImage.className = "images";
+    
     mainImage.src = `https://portiaportia.github.io/json/images/house-plans/${house.main_image}`;
-    houseDiv.appendChild(mainImage); //append to section
+    houseDiv.appendChild(mainImage); 
 
-    // Display house description
+
     const description = document.createElement("section");
     description.id = "description";
     description.innerHTML = `
@@ -57,13 +60,16 @@ const getHouseSection = (house) => {
         const planDiv = document.createElement("div");
         const planImage = document.createElement("img");
         const planName = document.createElement("p");
+
         planName.innerHTML = plan.name;
         planDiv.appendChild(planName);
         planImage.className = "floor-imgs";
         planImage.src = `https://portiaportia.github.io/json/images/house-plans/${plan.image}`;
         planDiv.appendChild(planImage);
+
         floorPlansSection.appendChild(planDiv);
     });
+
 
     section.appendChild(floorPlansSection);
     
@@ -72,3 +78,4 @@ const getHouseSection = (house) => {
 }
 
 window.onload = () => showHouses();
+
