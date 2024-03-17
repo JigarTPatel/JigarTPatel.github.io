@@ -1,32 +1,33 @@
 const showHideNav = () => {
     document.getElementById("nav-items").classList.toggle("hide-small");
 };
+
 const logoLink = () => {
-    window.location.href= "https://jigartpatel.github.io/home/csce242/projects/part4/home/index.html";
-}
+    window.location.href = "https://jigartpatel.github.io/home/csce242/projects/part4/home/index.html";
+};
 
 document.getElementById("logo").onclick = logoLink;
 document.getElementById("hamburger").onclick = showHideNav;
 
-const getBrands  = async () => {
+const getBrands = async () => {
     const url = "https://jigartpatel.github.io/home/csce242/projects/part5/home/brands.json";
 
-    try{
+    try {
         const response = await fetch(url);
         return response.json();
-    }catch(error){
+    } catch (error) {
         console.log(error);
     }
-}
+};
 
-const showBrands = async() => {
+const showBrands = async () => {
     const brands = await getBrands();
     const brandList = document.getElementById("main-content");
 
     brands.forEach(brand => {
         brandList.append(getBrandSection(brand));
-    })
-}
+    });
+};
 
 const getBrandSection = (brand) => {
     //create div for two brands to flex 
@@ -40,7 +41,7 @@ const getBrandSection = (brand) => {
     // create section for name inside brand section
     const name = document.createElement("section");
     name.className = "name";
-    name.innerHTML = `<b>${brand.name}</b>`
+    name.innerHTML = `<b>${brand.name}</b>`;
     brandSection.appendChild(name);
 
     //add image section below name 
@@ -61,9 +62,6 @@ const getBrandSection = (brand) => {
     brandSection.appendChild(products);
 
     return div;
-
-
-
-}
+};
 
 window.onload = () => showBrands();
