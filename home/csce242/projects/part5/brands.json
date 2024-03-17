@@ -1,7 +1,7 @@
 [
     {
       "_id": 1,
-      "img_name": "whiskey.jpg",
+      "img_name": "whiskey.jpeg",
       "name": "Johnnie Walker Black Label",
       "category": "Whiskey",
       "description": "A well-rounded Scotch whisky with notes of vanilla, spices, and smoke.",
@@ -13,7 +13,7 @@
     },
     {
       "_id": 2,
-      "img_name": "vodka.jpg",
+      "img_name": "vodka.jpeg",
       "name": "Grey Goose Vodka",
       "category": "Vodka",
       "description": "Premium French vodka known for its smoothness and purity.",
@@ -25,7 +25,7 @@
     },
     {
       "_id": 3,
-      "img_name": "rum.jpg",
+      "img_name": "rum.avif",
       "name": "Captain Morgan Original Spiced Rum",
       "category": "Rum",
       "description": "A blend of Caribbean rums with warm spices and hints of vanilla.",
@@ -37,7 +37,7 @@
     },
     {
       "_id": 4,
-      "img_name": "tequila.jpg",
+      "img_name": "tequila.jpeg",
       "name": "Patrón Silver Tequila",
       "category": "Tequila",
       "description": "Ultra-smooth tequila with hints of citrus and a clean finish.",
@@ -49,7 +49,7 @@
     },
     {
       "_id": 5,
-      "img_name": "gin.jpg",
+      "img_name": "gin.webp",
       "name": "Bombay Sapphire Gin",
       "category": "Gin",
       "description": "A classic London dry gin with vibrant botanicals and a crisp finish.",
@@ -61,7 +61,7 @@
     },
     {
       "_id": 6,
-      "img_name": "brandy.jpg",
+      "img_name": "brandy.webp",
       "name": "Hennessy V.S.O.P Privilège Cognac",
       "category": "Brandy",
       "description": "A smooth and well-balanced Cognac with notes of oak, vanilla, and dried fruits.",
@@ -73,7 +73,7 @@
     },
     {
       "_id": 7,
-      "img_name": "liqueur.jpg",
+      "img_name": "liqueur.jpeg",
       "name": "Baileys Irish Cream",
       "category": "Liqueur",
       "description": "A creamy blend of Irish whiskey, cream, and cocoa with a hint of coffee.",
@@ -85,7 +85,7 @@
     },
     {
       "_id": 8,
-      "img_name": "wine.jpg",
+      "img_name": "wine.webp",
       "name": "La Crema Pinot Noir",
       "category": "Wine",
       "description": "A rich and elegant Pinot Noir with flavors of red berries and spices.",
