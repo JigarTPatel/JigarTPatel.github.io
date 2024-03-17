@@ -56,8 +56,8 @@ const getBrandSection = (brand) => {
 
     //add array of available products 
     const products = document.createElement("p");
-    products.className = "productsList";
-    products.innerHTML = `<b>Some Products offered by the brand:</b> ${brand.products.join(", ")}`;
+    products.className = "LiquorList";
+    products.innerHTML = `<b>Some products offered by the brand:</b> ${brand.products.join(", ")}`;
     brandSection.appendChild(products);
 
     return div;
