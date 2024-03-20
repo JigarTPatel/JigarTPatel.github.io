@@ -65,10 +65,10 @@ body {
 }
 
 .carousel {
-    width: 48%; /* Adjusted width */
-    max-width: 800px; /* Set a maximum width if needed */
+    width: 48%; 
+    max-width: 800px; 
     height: auto;
-    margin: 0 auto; /* Center the image horizontally */
+    margin: 0 auto; 
 }
 
 .columns1 {
@@ -101,13 +101,62 @@ body {
     border-radius: 29px;
 }
 
-h3 {
+.contact-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--bg);
+    border: 2px solid var(--dark-grey);
+    border-radius: 29px;
+}
+
+.contact-info h2 {
     color: var(--black);
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-p {
+.contact-info p {
     font-size: 16px;
     line-height: 1.5;
+}
+
+.contact {
+    margin-top: 20px;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid var(--dark-grey);
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ff5252;
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 16px;
 }
