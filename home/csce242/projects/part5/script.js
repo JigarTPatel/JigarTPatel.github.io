@@ -10,7 +10,7 @@ document.getElementById("logo").onclick = logoLink;
 document.getElementById("hamburger").onclick = showHideNav;
 
 const getBrands = async () => {
-    const url = "https://jigartpatel.github.io/home/csce242/projects/part5/home/brands.json";
+    const url = "https://jigartpatel.github.io/home/csce242/projects/part5/brands.json";
 
     try {
         const response = await fetch(url);
