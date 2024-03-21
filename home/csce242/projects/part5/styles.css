@@ -16,7 +16,6 @@ body {
     background: var(--bg);
 }
 
-/* structure */
 #content {
     background: var(--content-bg);
     border: 4px solid var(--section-border);
@@ -26,7 +25,6 @@ body {
     border-radius: 15px; 
 }
 
-/*header and footer*/
 #header {
     text-align: center;
 }
@@ -202,7 +200,6 @@ body {
     }
 }
 
-/* For smaller resolutions */
 @media only screen and (max-width: 812px) {
     .brand {
         margin: 20px;
